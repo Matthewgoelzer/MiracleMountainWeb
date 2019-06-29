@@ -8,12 +8,36 @@
 
 .head {
   font-family: 'Noto Sans HK', sans-serif;
-
 }
 
+#camp-name {
+  text-decoration: none;
+  color:inherit;
+}
 #topHead {
   width:100%;
   background-image: url("images/mainMount.jpg");
+  background-size:100% auto;
+  background-repeat: no-repeat;
+  height:300px;
+}
+#speakerHead {
+  width:100%;
+  background-image: url("images/speaker.jpg");
+  background-size:100% auto;
+  background-repeat: no-repeat;
+  height:300px;
+}
+#aboutHead {
+  width:100%;
+  background-image: url("images/kids.jpg");
+  background-size:100% auto;
+  background-repeat: no-repeat;
+  height:300px;
+}
+#contactHead {
+  width:100%;
+  background-image: url("images/campSign.jpg");
   background-size:100% auto;
   background-repeat: no-repeat;
   height:300px;
@@ -44,8 +68,7 @@ nav{
 
 /*webpage title*/
 h1 {
-
-  font-size: 22px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -71,20 +94,19 @@ ul{
 
 }
 ul li{
-
   list-style: none;
   display:inline-block;
 }
 ul li a{
   display:block;
-
   text-decoration: none;
   color: #1e1e1e;
   font-size: 17px;
   padding:0 4px;
 }
 ul li a:hover{
-  color: rgba(0, 120, 50, 0.6);
+  color: #005511;
+  border-bottom: 2px #005511 solid;
 }
 .info{
   width: 100%;
@@ -124,7 +146,30 @@ ul li a:hover{
 does when statment in brackets is true*/
 @media only screen and (min-width: 768px){
   #topHead {
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:350px;
+    width: 100%;
+  }
+  #speakerHead {
     background-size:100% 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:350px;
+    width: 100%;
+  }
+
+  #aboutHead {
+    background-size:100% 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:350px;
+    width: 100%;
+  }
+
+  #contactHead {
+    background-size:100% 350px;
     background-repeat: no-repeat;
     background-position: center;
     height:350px;
@@ -143,7 +188,7 @@ does when statment in brackets is true*/
     padding:0 20px;
   }
   ul{
-    text-align: left;
+    text-align: center;
   }
   .wrap{
     width: 600px;
@@ -170,8 +215,29 @@ does when statment in brackets is true*/
 @media only screen and (min-width: 1000px){
 
   #topHead {
-    background-image: url("images/mainMount.jpg");
     background-size:100% 1300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:600px;
+    width: 100%
+  }
+  #speakerHead {
+    background-size:100% 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:400px;
+    width: 100%
+  }
+  #aboutHead {
+    background-size:100% 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:600px;
+    width: 100%
+  }
+
+  #contactHead {
+    background-size:100% 700px;
     background-repeat: no-repeat;
     background-position: center;
     height:600px;
@@ -182,7 +248,7 @@ does when statment in brackets is true*/
     text-indent: 20px;
     text-align: left;
     letter-spacing: 5px;
-    font-size: 150%
+    font-size: 180%
   }
   nav{
     height: 25px;
