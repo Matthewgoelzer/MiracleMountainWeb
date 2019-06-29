@@ -6,6 +6,18 @@
 	vertical-align: baseline;
 }
 
+.head {
+  font-family: 'Noto Sans HK', sans-serif;
+
+}
+
+#topHead {
+  width:100%;
+  background-image: url("images/mainMount.jpg");
+  background-size:100% auto;
+  background-repeat: no-repeat;
+  height:300px;
+}
 
 /*background color for web page*/
 body{
@@ -20,7 +32,6 @@ body{
 /* navigation bar*/
 nav{
   height: 35px;
-  background-color:#fff;
   margin: 0;
   padding-bottom: 10px;
 }
@@ -33,7 +44,7 @@ nav{
 
 /*webpage title*/
 h1 {
-  font-family: 'Noto Sans HK', sans-serif;
+
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -46,26 +57,27 @@ h1 {
   letter-spacing: 2px;
   /*word-spacing: 10px*/
   line-height: 40px;/* changes spacing between lines;*/
-  background-color: #fff;
   width: 100%;
   padding: 20px 0px 0px 0px;
 }
-
+#nav-bar{
+  width: 100%;
+  height:40px;
+}
 /*unordered list for navigation bar*/
 ul{
   font-family: 'Noto Sans HK', sans-serif;
   text-align: center;
-  margin-right: 50px;
-  width:100%;
+
 }
 ul li{
-  font-family: 'Noto Sans HK', sans-serif;
+
   list-style: none;
   display:inline-block;
 }
 ul li a{
   display:block;
-  font-family: 'Noto Sans HK', sans-serif;
+
   text-decoration: none;
   color: #1e1e1e;
   font-size: 17px;
@@ -149,20 +161,34 @@ does when statment in brackets is true*/
 
 /*PC*/
 @media only screen and (min-width: 1000px){
+
+  #topHead {
+    background-image: url("images/mainMount.jpg");
+    background-size:100% 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:600px;
+    width: 100%;
+  }
+
   h1{
     text-indent: 20px;
     text-align: left;
     letter-spacing: 5px;
+    font-size: 150%
   }
   nav{
     height: 25px;
   }
+
   ul li a{
-    font-size: 20px;
+    font-size: 150%;
     padding:0 20px;
   }
   ul{
-    text-align: right;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
   }
   .wrap{
     font-family: 'Noto Sans HK', sans-serif;
